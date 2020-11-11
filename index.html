@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>OpenKinoAI | Who's afraid of Virginia Wolf</title>
+		<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/sass.css" type="text/css" media="all">
+		<link  href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.css" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<div class="menu"></div>
+			<div class="title">
+				<span>Who's afraid of Virginia Wolf</span>
+				<div class="account"></div>
+			</div>
+			<div class="space-top-left"></div>
+			<div class="space-bot-left"></div>
+			<div class="video-row">
+				<div class="video">
+					<img src="./assets/video.jpg" id="videoimg">
+					<div class="videobar"></div>
+					<div class="tracklet" id="man-red-tie" data-cible="man-red-tie">
+						<span>man-red-tie</span>
+						<div class="border"></div>
+					</div>
+					<div class="tracklet" id="man-green-tie" data-cible="man-green-tie">
+						<span>man-green-tie</span>
+						<div class="border"></div>
+					</div>
+					<div class="tracklet" id="woman-blue" data-cible="woman-blue">
+						<span>woman-blue</span>
+						<div class="border"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline"></div>
+			<div class="space-right"></div>
+			<div class="options">
+				<div id="accordion">
+					<h3 class="tab" id="preparation">Preparation</h3>
+					<div class=""></div>
+
+					<h3 class="tab" id="framing">Framing</h3>
+					<div class="framing-row ui-state-active">
+						<div id="tabs">
+							<ul>
+								<li id="preset-tab"><a href="#preset" id="preset-a" selected>Preset scene</a></li>
+								<li id="custom-tab"><a href="#custom" id="custom-a">Custom scene</a></li>
+							</ul>
+							<div id="preset">
+								<div class="selected-actors" id="actors-preset">
+									Selected actors...
+								</div>
+								<div class="half-row">
+									<select class="selectmenu" id="frame">
+										<option value="video" id="original-frame" selected>Frame</option>
+										<option value="bcu" id="bcu">BCU</option>
+										<option value="cu" id="cu">CU</option>
+										<option value="mcu" id="mcu">MCU</option>
+										<option value="ms" id="ms">MS</option>
+										<option value="mls" id="mls">MLS</option>
+										<option value="fs" id="fs">FS</option>
+									</select>
+									<select class="selectmenu" id="ratio">
+										<option value="original-ratio" id="original-ratio" selected>Original</option>
+										<option value="half" id="half">1/2 Width</option>
+										<option value="twice" id="twice">2 * Width</option>
+										<option value="43" id="43">4:3</option>
+										<option value="169" id="169">16:9</option>
+										<option value="4k2k" id="4k2k">4K - 2K</option>
+									</select>
+								</div>
+								<div class="toggles">
+									<div class="toggles-left">
+										<div class="toggle-row">
+											<div class="toggle" id="keep-out"></div>
+											<span>Keep out</span>
+										</div>
+										<div class="toggle-row">
+											<div class="toggle" id="pull-in"></div>
+											<span>Pull in</span>
+										</div>
+									</div>
+									<div class="toggles-right">
+										<div class="toggle-row">
+											<div class="toggle" id="gaze-direction"></div>
+											<span>Gaze direction</span>
+										</div>
+										<div class="toggle-row">
+											<div class="toggle" id="stage-position"></div>
+											<span>Stage position</span>
+										</div>
+									</div>
+								</div>
+
+								<div id="create-scene">Create scene</div>
+							</div>
+							<div id="custom">
+								<div class="half-row">
+									<div id="create">Create</div>
+									<div id="cancel">Cancel</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="tab" id="videoediting">Video Editing</h3>
+					<div class=""></div>
+
+					<h3 class="tab" id="annotation">Annotation</h3>
+					<div class=""></div>
+
+					<h3 class="tab" id="export">Export</h3>
+					<div class=""></div>
+				</div>
+				<div class="info"></div>
+			</div>
+		</main>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/scripts.js" charset="utf-8"></script>
+	</body>
+
+</html>
